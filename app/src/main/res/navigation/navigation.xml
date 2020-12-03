@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/listFragment">
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.wishinglist.Fragments.list.ListFragment"
+        android:label="WishList"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_listFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_updateFragment"
+            app:destination="@id/updateFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_specificItemFragment"
+            app:destination="@id/specificItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.wishinglist.Fragments.add.AddFragment"
+        android:label="Add to WishList"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_addFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateFragment"
+
+        android:name="com.example.wishinglist.Fragments.update.UpdateFragment"
+        android:label="Edit Wish"
+        tools:layout="@layout/fragment_update" >
+        <action
+            android:id="@+id/action_updateFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+        <argument
+            android:name="currentItem"
+            app:argType="com.example.wishinglist.model.Items" />
+    </fragment>
+    <fragment
+        android:id="@+id/specificItemFragment"
+
+        android:name="com.example.wishinglist.Fragments.specificitem.SpecificItemFragment"
+        android:label="Wish"
+        tools:layout="@layout/fragment_specific_item" >
+        <action
+            android:id="@+id/action_specificItemFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+        <argument
+            android:name="specificItem"
+            app:argType="com.example.wishinglist.model.Items" />
+        <action
+            android:id="@+id/action_specificItemFragment_to_updateFragment"
+            app:destination="@id/updateFragment" />
+    </fragment>
+</navigation>

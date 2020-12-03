@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A7533">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rectangle"
+        tools:context=".Fragments.update.UpdateFragment">
+
+
+        <TextView
+            android:id="@+id/updatetxtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="44dp"
+            android:text="@string/nameupdate"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/update_ItemName_edittext"
+            app:layout_constraintTop_toBottomOf="@+id/updateTitle" />
+
+        <EditText
+            android:id="@+id/update_Location_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:hint="@string/locationupdate"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            app:layout_constraintStart_toStartOf="@+id/updatetxtLocation"
+            app:layout_constraintTop_toBottomOf="@+id/updatetxtLocation"
+            android:autofillHints="" />
+
+        <Button
+            android:id="@+id/updateImageBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonupdate"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintStart_toEndOf="@+id/imageView3" />
+
+        <EditText
+            android:id="@+id/update_Description_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:hint="@string/descriptionupdate"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            app:layout_constraintStart_toStartOf="@+id/updatetxtdescr"
+            app:layout_constraintTop_toBottomOf="@+id/updatetxtdescr"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/updatetxtLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/locationupdate"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/update_Description_edittext"
+            app:layout_constraintTop_toBottomOf="@+id/update_Description_edittext" />
+
+        <TextView
+            android:id="@+id/updatetxtdescr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/descriptionupdate"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/update_ItemName_edittext"
+            app:layout_constraintTop_toBottomOf="@+id/update_ItemName_edittext" />
+
+        <EditText
+            android:id="@+id/update_editTextNumber"
+            android:layout_width="64dp"
+            android:layout_height="36dp"
+            android:background="@drawable/custom_input"
+            android:ems="12"
+            android:hint="@string/priceupdate"
+            android:inputType="number"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            app:layout_constraintStart_toStartOf="@+id/updatetxtPrice"
+            app:layout_constraintTop_toBottomOf="@+id/updatetxtPrice"
+            android:autofillHints="" />
+
+        <ImageButton
+            android:id="@+id/imagebtndel"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/delimage"
+            android:tint="#a92921"
+            app:layout_constraintBottom_toBottomOf="@+id/updateTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/updateTitle"
+            app:srcCompat="@drawable/ic_delete" />
+
+        <TextView
+            android:id="@+id/updatetxtPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/priceupdate"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/update_Location_edittext"
+            app:layout_constraintTop_toBottomOf="@+id/update_Location_edittext" />
+
+        <EditText
+            android:id="@+id/update_ItemName_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:hint="@string/nameupdate"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updatetxtName"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:text="@string/kronerupdate"
+            app:layout_constraintBottom_toBottomOf="@+id/update_editTextNumber"
+            app:layout_constraintStart_toEndOf="@+id/update_editTextNumber" />
+
+        <TextView
+            android:id="@+id/updateTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fireplace"
+            android:paddingTop="20dp"
+            android:text="@string/update_your_wishupdate"
+            android:textColor="#a92921"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/update_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+
+            android:text="@string/update_changesupdate"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#F8D54C"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="@string/is_this_boughtupdate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="174dp"
+            android:layout_height="99dp"
+            android:contentDescription="@string/wishdescriptionupdate"
+            android:src="@drawable/mnt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

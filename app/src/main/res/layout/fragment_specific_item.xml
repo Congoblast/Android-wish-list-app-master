@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#0A7533">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectangle"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+
+    tools:context=".Fragments.specificitem.SpecificItemFragment">
+
+
+
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/showPrice">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="234dp"
+                    android:layout_height="127dp"
+                    android:layout_gravity="center"
+
+
+                    android:contentDescription="@string/wishimagespecific"
+                    android:src="@drawable/mnt" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/txtviewTitleSpecific"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fireplace"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="@string/your_wishspecific"
+                android:textColor="#a92921"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/showDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="22sp"
+                android:text="@string/descspecific"
+
+                app:layout_constraintStart_toStartOf="@+id/txtViewDescTitle"
+                app:layout_constraintTop_toBottomOf="@+id/txtViewDescTitle" />
+
+            <TextView
+                android:id="@+id/showName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/namespecific"
+                android:textSize="26sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtviewTitleSpecific" />
+
+            <TextView
+                android:id="@+id/showLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/locationtxtspecific"
+                app:layout_constraintStart_toStartOf="@+id/txtViewLocationTitle"
+                app:layout_constraintTop_toBottomOf="@+id/txtViewLocationTitle" />
+
+            <TextView
+                android:id="@+id/showPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pricespecific"
+                app:layout_constraintStart_toStartOf="@+id/txtViewPriceTitle"
+                app:layout_constraintTop_toBottomOf="@+id/txtViewPriceTitle" />
+
+            <TextView
+                android:id="@+id/txtViewDescTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44sp"
+                android:layout_marginTop="22sp"
+                android:text="@string/descriptionspecific"
+                android:textSize="22sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/showName" />
+
+            <TextView
+                android:id="@+id/txtViewLocationTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44sp"
+                android:layout_marginTop="16sp"
+                android:text="@string/can_be_found_atspecific"
+
+                android:textSize="22sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/showDescription" />
+
+            <TextView
+                android:id="@+id/txtViewPriceTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44sp"
+                android:layout_marginTop="16sp"
+                android:text="@string/pricespecific"
+                android:textSize="22sp"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/showLocation" />
+
+            <TextView
+                android:id="@+id/kroner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/krspecific"
+                app:layout_constraintBottom_toBottomOf="@+id/showPrice"
+                app:layout_constraintStart_toEndOf="@+id/showPrice" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
